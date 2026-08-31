@@ -1,8 +1,8 @@
-# Finish What I Started
+# Access to Justice: Access to Finish
 
 **A Fair Path Back. A Future in Law.**
 
-Static source for the Finish What I Started public campaign website.
+Static source for the Access to Justice: Access to Finish public campaign website.
 
 ## Pages
 
@@ -12,6 +12,7 @@ Static source for the Finish What I Started public campaign website.
 - The Circular Access Problem — `maze.html`
 - Timeline — `timeline.html`
 - Evidence — `evidence.html`
+- FAQ — `faq.html`
 - Press — `press.html`
 - How to Help — `help.html`
 - Updates — `updates.html`

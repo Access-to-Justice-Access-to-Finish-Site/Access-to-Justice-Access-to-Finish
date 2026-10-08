@@ -1,25 +1,19 @@
-# Access to Justice: Access to Finish
+# This Could Have Been You
 
-**A Fair Path Back. A Future in Law.**
+Static source for an independent storytelling and advocacy project about education, institutional accountability, and rebuilding beyond institutional barriers.
 
-Static source for the Access to Justice: Access to Finish public campaign website.
+The site preserves the original campaign chronology and record while clearly stating the current direction: it is no longer seeking readmission to Western Law.
 
-## Pages
+## Cloudflare Pages
 
-- Home — `index.html`
-- The Story — `story.html`
-- What I Am Asking For — `ask.html`
-- The Circular Access Problem — `maze.html`
-- Timeline — `timeline.html`
-- Evidence — `evidence.html`
-- FAQ — `faq.html`
-- Press — `press.html`
-- How to Help — `help.html`
-- Updates — `updates.html`
-- Contact — `contact.html`
+- Production branch: `this-could-have-been-you-redesign`
+- Framework preset: None
+- Build command: leave blank
+- Build output directory: `/`
+- Root directory: leave blank
 
-Shared presentation is in `styles.css`; shared navigation/footer behavior is in `site.js`.
+The project is ready for a static Cloudflare Pages deployment. Do not publish or merge without explicit owner approval.
 
-## Launch status
+## Publication safeguards
 
-The site source is under active build. GitHub Pages should remain disabled until redaction/privacy review, evidence-link review, contact-channel selection, factual QA, accessibility/mobile QA and explicit launch approval are complete.
+Underlying evidence, recordings, transcripts, medical information, personal contact details, privileged or confidential materials, and irrelevant third-party information remain unpublished pending verification, legal/privacy review, and redaction.

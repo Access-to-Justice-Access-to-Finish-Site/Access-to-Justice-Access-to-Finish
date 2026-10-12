@@ -25,3 +25,44 @@
 .archive-title+.evidence-grid{margin-top:1.4rem}
 @media(max-width:900px){.feature-grid{grid-template-columns:1fr 1fr}.milestone-strip{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.feature-grid,.milestone-strip{grid-template-columns:1fr}.new-hero h1{font-size:clamp(3.1rem,13vw,5.6rem)}.chapter{padding:3rem 0}}
+
+
+/* Visual evidence diary: additive components using the site's existing pastel palette. */
+.diary-hero{background:radial-gradient(ellipse at 8% 15%,rgba(255,237,246,.8),transparent 45%),radial-gradient(ellipse at 93% 70%,rgba(230,244,255,.95),transparent 45%)}
+.diary-hero h1{max-width:950px}
+.diary-tabs{display:flex;gap:.45rem;flex-wrap:wrap;padding:.85rem 0 1.5rem;margin:0 0 2.2rem;border-bottom:1px solid var(--line)}
+.diary-tabs a{text-decoration:none;border:1px solid #e6dbe8;background:#fff;padding:.65rem 1.08rem;border-radius:999px;color:var(--ink);font-size:.93rem;min-width:4.8rem;text-align:center;transition:background .15s}
+.diary-tabs a:hover,.diary-tabs a[aria-current="page"]{background:var(--pink);border-color:#ecc0d9;color:#7c4e70}
+.diary-preface{padding:2.5rem;border:1px solid var(--line);border-radius:26px;background:linear-gradient(135deg,#fffafc,#f3faff);margin-bottom:3rem}
+.diary-preface h2{font:400 clamp(2rem,4vw,3.5rem)/1.13 var(--serif);margin:.5rem 0 1.2rem}
+.diary-preface p{font:1.18rem/1.75 var(--serif);max-width:880px}
+.diary-year-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:1rem;margin:2rem 0 3rem}
+.diary-year-card{display:flex;flex-direction:column;min-height:230px;gap:.55rem;border-radius:23px;border:1px solid var(--line);padding:1.5rem;background:linear-gradient(145deg,#fff,#fff8fc 60%,#f0f8ff);color:var(--ink);text-decoration:none;box-shadow:0 10px 28px rgba(79,104,145,.07)}
+.diary-year-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);color:var(--ink)}
+.diary-year{font:400 2.5rem var(--serif);color:#ae6c8c;line-height:1}
+.diary-year-card strong{font:400 1.5rem/1.2 var(--serif)}
+.diary-year-card small{font:.84rem/1.45 var(--sans);color:var(--muted)}
+.diary-open{margin-top:auto;font-size:.78rem;font-weight:700;color:#4b6790}
+.diary-intro{max-width:870px;margin:0 0 2rem}.diary-intro p{color:var(--muted)}
+.diary-chronology{border-left:2px solid #e9cade;margin:2rem 0 3rem;padding-left:2rem}
+.diary-entry{position:relative;display:grid;grid-template-columns:minmax(140px,190px) minmax(0,1fr);gap:1.6rem;padding:0 0 3.7rem;scroll-margin-top:9rem}
+.diary-entry:before{content:"";position:absolute;left:calc(-2rem - 7px);top:.5rem;width:12px;height:12px;border:2px solid #e3adc8;border-radius:50%;background:white}
+.diary-entry-date{color:#8b5a78;font:.98rem/1.6 var(--serif);padding-top:.25rem}
+.diary-entry-body{min-width:0}.diary-entry-heading h2{font:400 clamp(1.7rem,3vw,2.7rem)/1.2 var(--serif);margin:.4rem 0 1.2rem;letter-spacing:-.02em}
+.diary-entry-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(230px,.95fr);gap:1.6rem;align-items:start}
+.diary-entry-grid p{font:1.08rem/1.77 var(--serif);margin:0 0 1.5rem}
+.diary-entry-grid .source-note{font:.82rem/1.8 var(--sans)!important}
+.diary-artifact{border:1px solid #e5dce8;border-radius:22px;min-height:245px;overflow:hidden;margin:0;background:linear-gradient(145deg,#fffafc 0,#eff8ff 90%);box-shadow:0 12px 32px rgba(81,104,142,.07);display:flex;flex-direction:column}
+.artifact-top{display:flex;justify-content:space-between;gap:.7rem;padding:1rem;color:#71829e;font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+.artifact-lines{padding:2rem 1.35rem 1.4rem;display:grid;gap:.85rem;flex:1;align-content:center}
+.artifact-lines i{height:11px;display:block;background:rgba(228,201,221,.45);border-radius:99px}
+.artifact-lines i:nth-child(2){width:70%;background:rgba(197,221,242,.65)}
+.artifact-lines i:nth-child(3){width:88%;background:rgba(228,201,221,.3)}
+.diary-artifact figcaption{padding:1rem 1.25rem;border-top:1px solid var(--line);background:#ffffffaf}
+.artifact-caption{display:block;font:400 1rem/1.5 var(--serif);color:var(--ink)}
+.artifact-disclaimer{display:block;font:.69rem/1.55 var(--sans);color:var(--muted);margin-top:.55rem}
+.diary-bottom-nav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.4rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.diary-bottom-nav a{text-decoration:none;font-size:.88rem}
+.diary-inline-link{font-weight:700}
+@media(max-width:850px){.diary-entry{grid-template-columns:1fr;gap:.5rem}.diary-entry-grid{grid-template-columns:1fr}.diary-artifact{max-width:520px}.diary-chronology{padding-left:1.5rem}.diary-entry:before{left:calc(-1.5rem - 7px)}}
+@media(max-width:540px){.diary-preface{padding:1.4rem}.diary-tabs a{min-width:3.8rem;padding:.55rem .8rem}.diary-year-grid{grid-template-columns:1fr}.diary-year-card{min-height:205px}}

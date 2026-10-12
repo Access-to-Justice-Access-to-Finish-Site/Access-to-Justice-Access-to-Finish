@@ -1,4 +1,4 @@
-const pages=[['index.html','Home'],['story.html','My Story'],['timeline.html','Timeline'],['evidence.html','Evidence'],['audio.html','Audio & transcripts'],['maze.html','The System'],['faq.html','FAQ'],['press.html','Press'],['help.html','Take Action'],['updates.html','Updates'],['contact.html','Contact']];
+const pages=[['index.html','Home'],['beginning.html','Before & Year One'],['story.html','My Story'],['timeline.html','Timeline'],['evidence.html','Evidence'],['audio.html','Audio & transcripts'],['maze.html','The System'],['faq.html','FAQ'],['press.html','Press'],['help.html','Take Action'],['updates.html','Updates'],['contact.html','Contact']];
 const current=(location.pathname.split('/').pop()||'index.html').toLowerCase();
 if(document.title.includes('Access to Justice: Access to Finish'))document.title=document.title.replace('Access to Justice: Access to Finish','This Could Have Been You');
 const nav=pages.map(([href,label])=>`<a href="${href}" ${current===href?`aria-current="page"`:''}>${label}</a>`).join('');

@@ -17,3 +17,12 @@ if(/^year-202[0-6]\.html$/.test(current)){
   mediaScript.defer=true;
   document.body.append(mediaScript);
 }
+
+
+document.querySelectorAll("audio[data-exclusive-audio]").forEach((player) => {
+  player.addEventListener("play", () => {
+    document.querySelectorAll("audio[data-exclusive-audio]").forEach((other) => {
+      if (other !== player) other.pause();
+    });
+  });
+});

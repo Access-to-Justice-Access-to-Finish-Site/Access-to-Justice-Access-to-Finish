@@ -5,14 +5,7 @@
   const year = match[1];
   const publicMedia = {
     "2020": { entries: {} },
-    "2021": {
-      entries: {
-        2: { image: "assets/diary/toronto-star-project-aaron-2021.jpg", alt: "Retained view of the March 31, 2021 Toronto Star feature about Project Aaron.", caption: "Toronto Star feature by Ann Marie Elpa, March 31, 2021." },
-        4: { image: "assets/diary/project-aaron-fundraiser.jpg", alt: "Project Aaron crowdfunding page showing 1,177 dollars raised against a 1,000 dollar goal.", caption: "The fundraising record shows $1,177 raised against the $1,000 goal." },
-        6: { image: "assets/diary/western-induction-2021.jpg", alt: "Signing the Western Law induction book at the start of law school.", caption: "September 7, 2021: induction into the JD Class of 2024." },
-        7: { image: "assets/diary/sls-first-year-representative.jpg", alt: "Student Legal Society profile identifying Renée as a first-year representative.", caption: "Contemporaneous first-year Student Legal Society representative profile." }
-      }
-    },
+    "2021": { entries: {} },
     "2022": { entries: {} },
     "2023": {
       entries: {

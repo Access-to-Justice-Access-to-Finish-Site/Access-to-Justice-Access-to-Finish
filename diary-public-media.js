@@ -6,14 +6,11 @@
   const publicMedia = {
     "2020": {
       entries: {
-        1: { image: "assets/diary/acrylic-racing-champion.jpg", alt: "An original acrylic painting from the established pre-law portfolio.", caption: "Selected original acrylic work from the established pre-law portfolio." },
-        2: { image: "assets/diary/art-studio-2020.jpg", alt: "The artist working on a large acrylic painting in her studio before law school.", caption: "Studio practice and business development before Western Law." },
-        3: { image: "assets/diary/project-aaron-memorial-portrait.jpg", alt: "A memorial portrait displayed on an easel.", caption: "Memorial portraiture associated with the community work that became Project Aaron." }
+        2: { image: "assets/diary/art-studio-2020.jpg", alt: "The artist working on a large acrylic painting in her studio before law school.", caption: "Studio practice and business development before Western Law." }
       }
     },
     "2021": {
       entries: {
-        1: { image: "assets/diary/memorial-portrait-detail.jpg", alt: "Detail of a painted memorial portrait.", caption: "Selected memorial artwork from Project Aaron." },
         2: { image: "assets/diary/toronto-star-project-aaron-2021.jpg", alt: "Retained view of the March 31, 2021 Toronto Star feature about Project Aaron.", caption: "Toronto Star feature by Ann Marie Elpa, March 31, 2021. Displayed as a contextual record of media coverage." },
         4: { image: "assets/diary/project-aaron-fundraiser.jpg", alt: "Project Aaron crowdfunding page showing 1,177 dollars raised against a 1,000 dollar goal.", caption: "The retained fundraising record shows $1,177 raised against the $1,000 goal." },
         6: { image: "assets/diary/western-induction-2021.jpg", alt: "Signing the Western Law induction book at the start of law school.", caption: "September 7, 2021: induction into the JD Class of 2024." },
@@ -23,9 +20,7 @@
     },
     "2022": {
       entries: {
-        1: { image: "assets/diary/contracts-study-notes.jpg", alt: "A contracts casebook beside handwritten study notes.", caption: "Contemporaneous first-year coursework and preparation." },
-        2: { image: "assets/diary/student-working-cafe.jpg", alt: "A law student working independently on a laptop at a cafe.", caption: "Independent study and professional development during the early law-school period." },
-        4: { image: "assets/diary/law-library.jpg", alt: "Rows of law books in a university law library.", caption: "Academic setting during the 2022 law-school period." }
+        1: { image: "assets/diary/contracts-study-notes.jpg", alt: "A contracts casebook beside handwritten study notes.", caption: "Contemporaneous first-year coursework and preparation." }
       }
     },
     "2023": {
@@ -77,7 +72,7 @@
       const placeholder = entry.querySelector(".diary-artifact");
       const figure = evidenceFigure(item);
       placeholder?.replaceWith(figure);
-      gallery.push(item);
+      // The evidence image is already visible beside its dated entry. Do not duplicate it in a second gallery.
     }
     if (item.audio) entry.querySelector(".diary-entry-body")?.append(audioCard(item));
   });

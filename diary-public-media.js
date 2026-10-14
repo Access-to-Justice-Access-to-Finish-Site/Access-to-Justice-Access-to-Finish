@@ -39,6 +39,6 @@
       list.appendChild(wrapper);
     }
     details.appendChild(list);
-    note.replaceWith(details);
+    note.after(details);
   });
 })();

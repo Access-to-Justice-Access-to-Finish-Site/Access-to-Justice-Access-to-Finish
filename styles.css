@@ -304,3 +304,16 @@ a{color:#28577b}
 .record-table .col-record{padding-top:.4rem}
 .minimal-head{padding-top:2rem}
 }
+/* Email correspondence index */
+.communication-section{padding:1.3rem 0 2rem;margin-bottom:2rem}
+.communication-section h2{font:700 1.1rem/1.4 var(--sans)}
+.communication-section .record-table td{font-size:.86rem}
+.communication-section .col-actor{width:220px}
+.communication-section .col-record{width:205px}
+.record-source{font-size:.78rem;color:#556577;overflow-wrap:anywhere}
+.minimal-record-heading{font:700 1rem/1.4 var(--sans);margin:1.5rem 0 1rem}
+.communication-section tr[id]{scroll-margin-top:100px}
+.communication-section tr:target{background:#eef4f8}
+@media(max-width:700px){.communication-section .col-actor,.communication-section .col-record{width:auto}.record-source{font-size:.78rem}}
+
+.process-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.process-compare>div{padding:16px;border:1px solid #ddd;border-radius:8px}.process-bridge{padding:20px 0;border-bottom:1px solid #ddd}@media(max-width:700px){.process-compare{grid-template-columns:1fr}}

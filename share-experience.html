@@ -7,41 +7,51 @@
   <title>Share Your Experience | This Could Have Been You</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .reporting-page .page-hero { padding-bottom: 2rem; }
-    .reporting-page .page-hero .dek { max-width: 760px; }
-    .reporting-shell { max-width: 820px; margin: 0 auto; padding-top: 1.5rem; padding-bottom: 3rem; }
-    .reporting-intro { margin: 0 0 1.25rem; }
-    .reporting-safeguard { margin: 0; padding: 1.35rem 1.5rem; border-left: 4px solid #2f6878; border-radius: 0 10px 10px 0; background: #eef6f7; }
-    .reporting-safeguard h2 { margin: 0 0 .65rem; }
-    .reporting-safeguard p { margin: .55rem 0 0; }
-    .reporting-frame { display: block; width: 100%; min-height: 1750px; border: 1px solid #c7d7da; border-radius: 12px; background: #fff; box-shadow: 0 10px 28px rgba(13,42,51,.1); }
-    .reporting-fallback { margin: 1.25rem 0 0; text-align: center; }
-    .reporting-fallback a { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: .7rem 1.15rem; border-radius: 999px; background: #153f4b; color: #fff; font-weight: 700; text-decoration: none; }
+    .reporting-main { background: #f7f5f0; }
+    .reporting-shell { width: min(100% - 32px, 860px); margin: 0 auto; padding: 3.25rem 0 3rem; }
+    .reporting-heading { text-align: center; margin: 0 auto 1.75rem; }
+    .reporting-heading .eyebrow { margin-bottom: .55rem; }
+    .reporting-heading h1 { margin: 0; }
+    .reporting-heading .dek { max-width: 690px; margin: .8rem auto 0; }
+    .reporting-safeguard { display: grid; grid-template-columns: 170px 1fr; gap: 1.5rem; align-items: start; margin: 0 0 1.25rem; padding: 1.35rem 1.5rem; border-top: 3px solid #2f6878; border-radius: 10px; background: #fff; box-shadow: 0 7px 22px rgba(13,42,51,.07); }
+    .reporting-safeguard h2 { margin: 0; font-size: 1.25rem; line-height: 1.25; }
+    .reporting-safeguard-copy p { margin: 0; }
+    .reporting-safeguard-copy p + p { margin-top: .65rem; }
+    .reporting-form-wrap { overflow: hidden; border: 1px solid #d4d9d7; border-radius: 12px; background: #fff; box-shadow: 0 10px 30px rgba(13,42,51,.08); }
+    .reporting-frame { display: block; width: 100%; height: 1660px; border: 0; background: #fff; }
+    .reporting-fallback { margin: 1rem 0 0; text-align: center; }
+    .reporting-fallback a { color: #153f4b; font-weight: 700; text-underline-offset: 3px; }
     @media (max-width: 720px) {
-      .reporting-page .page-hero { padding-bottom: 1.5rem; }
-      .reporting-shell { padding-top: 1rem; padding-bottom: 2rem; }
-      .reporting-safeguard { padding: 1.1rem 1rem; }
-      .reporting-frame { min-height: 2050px; border-radius: 8px; box-shadow: 0 8px 22px rgba(13,42,51,.08); }
+      .reporting-shell { width: min(100% - 20px, 860px); padding: 2rem 0; }
+      .reporting-heading { margin-bottom: 1.25rem; text-align: left; }
+      .reporting-heading .dek { margin-left: 0; }
+      .reporting-safeguard { display: block; padding: 1.1rem; }
+      .reporting-safeguard h2 { margin-bottom: .7rem; }
+      .reporting-frame { height: 2000px; }
     }
   </style>
 </head>
-<body class="reporting-page">
+<body>
 <div id="site-header"></div>
-<main id="main">
-  <header class="page-hero page-hero-tight">
-    <div class="eyebrow">Community reporting</div>
-    <h1>Share your experience</h1>
-    <p class="dek">A dedicated, private-submission page for people who experienced discrimination, accommodation barriers, retaliation, or failures in academic or administrative processes.</p>
-  </header>
-  <div class="content-shell reporting-shell">
-    <section class="reporting-intro" aria-labelledby="before-submit">
-      <div class="reporting-safeguard">
-        <h2 id="before-submit">Before you submit</h2>
+<main id="main" class="reporting-main">
+  <div class="reporting-shell">
+    <header class="reporting-heading">
+      <div class="eyebrow">Community reporting</div>
+      <h1>Share your experience</h1>
+      <p class="dek">A private way to report discrimination, accommodation barriers, retaliation, or failures in academic and administrative processes.</p>
+    </header>
+
+    <section class="reporting-safeguard" aria-labelledby="before-submit">
+      <h2 id="before-submit">Before you submit</h2>
+      <div class="reporting-safeguard-copy">
         <p>Share only your own experience. Avoid unnecessary names and do not include confidential, privileged, medical, or unrelated third-party information.</p>
-        <p><strong>Submissions are reviewed privately and are not published automatically.</strong> Publication would require separate consent. This form is not an emergency service, legal advice, or a promise of representation or investigation.</p>
+        <p><strong>Submissions are reviewed privately and are not published automatically.</strong> Publication requires separate consent. This form is not an emergency service, legal advice, or a promise of representation or investigation.</p>
       </div>
     </section>
-    <iframe class="reporting-frame" title="Share Your Experience form" src="https://docs.google.com/forms/d/e/1FAIpQLSeDzyLdeGjgljh1clCviEmmgPp4D84f5HNODK2_pCUD9fIaeg/viewform?embedded=true" loading="eager">Loading the reporting form…</iframe>
+
+    <div class="reporting-form-wrap">
+      <iframe class="reporting-frame" title="Share Your Experience form" src="https://docs.google.com/forms/d/e/1FAIpQLSeDzyLdeGjgljh1clCviEmmgPp4D84f5HNODK2_pCUD9fIaeg/viewform?embedded=true" loading="eager">Loading the reporting form…</iframe>
+    </div>
     <p class="reporting-fallback"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDzyLdeGjgljh1clCviEmmgPp4D84f5HNODK2_pCUD9fIaeg/viewform" target="_blank" rel="noopener noreferrer">Open the form in a separate window</a></p>
   </div>
 </main>

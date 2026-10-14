@@ -315,3 +315,5 @@ a{color:#28577b}
 .communication-section tr[id]{scroll-margin-top:100px}
 .communication-section tr:target{background:#eef4f8}
 @media(max-width:700px){.communication-section .col-actor,.communication-section .col-record{width:auto}.record-source{font-size:.78rem}}
+
+.process-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.process-compare>div{padding:16px;border:1px solid #ddd;border-radius:8px}.process-bridge{padding:20px 0;border-bottom:1px solid #ddd}@media(max-width:700px){.process-compare{grid-template-columns:1fr}}

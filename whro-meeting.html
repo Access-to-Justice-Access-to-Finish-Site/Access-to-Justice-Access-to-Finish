@@ -37,12 +37,12 @@
         <article>
           <span class="release-index">Version A · 1.0× · 1:03:00</span>
           <h3>Normal playback speed</h3>
-          <audio controls preload="metadata" data-whro-audio="normal" src="https://pub-38441f261f6a4137a3122a620e5acbc9.r2.dev/WHRO-Final-Normal-Speed-Web.mp3" aria-label="WHRO meeting normal speed"></audio>
+          <audio controls preload="metadata" data-whro-audio="normal" data-exclusive-audio src="https://pub-38441f261f6a4137a3122a620e5acbc9.r2.dev/WHRO-Final-Normal-Speed-Web.mp3" aria-label="WHRO meeting normal speed"></audio>
         </article>
         <article>
           <span class="release-index">Version B · 1.5× · 42:00</span>
           <h3>Faster playback</h3>
-          <audio controls preload="metadata" data-whro-audio="fast" src="https://pub-38441f261f6a4137a3122a620e5acbc9.r2.dev/WHRO-Final-1.5x-Web.mp3" aria-label="WHRO meeting accelerated version"></audio>
+          <audio controls preload="metadata" data-whro-audio="fast" data-exclusive-audio src="https://pub-38441f261f6a4137a3122a620e5acbc9.r2.dev/WHRO-Final-1.5x-Web.mp3" aria-label="WHRO meeting accelerated version"></audio>
         </article>
       </div>
       <p class="quiet-note" id="whro-audio-status" role="status">Both edited audio recordings are available.</p>
@@ -79,13 +79,5 @@
 </main>
 <div id="site-footer"></div>
 <script src="site.js"></script>
-<script>
-(() => {
-  const players = [...document.querySelectorAll('[data-whro-audio]')];
-  players.forEach(player => player.addEventListener('play', () => {
-    players.forEach(other => { if (other !== player) other.pause(); });
-  }));
-})();
-</script>
 </body>
 </html>

@@ -8,21 +8,24 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="site-header"></div>
+<div id="site-header">
+</div>
 <main id="main">
   <header class="page-hero page-hero-tight">
     <div class="eyebrow">Evidence archive</div>
-    <h1>Find the source in context.</h1>
-    <p class="dek">This index distinguishes firsthand accounts, reported experiences, university statements, procedural records and formal decisions. Inclusion does not mean every disputed allegation has been adjudicated.</p>
+    <h1>Evidence index</h1>
+    <p class="dek">Search dated correspondence, institutional decisions and public records.</p>
   </header>
   <div class="content-shell">
-    <div class="notice"><strong>Public redaction standard:</strong> This archive presents dated documents and source descriptions, not unredacted tribunal files. Personal addresses and contact details, student identifiers, medical and sexual-violence disclosures, private messages, third-party identities, professional references, privileged or confidential communications, and unrelated photographs are excluded. A source listed here is not necessarily a publicly released document.</div>
+    <div class="notice">
+<strong>Public redaction standard:</strong> This archive presents dated documents and source descriptions, not unredacted tribunal files. Personal addresses and contact details, student identifiers, medical and sexual-violence disclosures, private messages, third-party identities, professional references, privileged or confidential communications, and unrelated photographs are excluded. A source listed here is not necessarily a publicly released document.</div>
 
     <section class="archive-focus" aria-labelledby="share-experience">
       <div class="eyebrow">Community reporting</div>
       <h2 id="share-experience">Share your experience.</h2>
       <p>If you experienced discrimination, accommodation barriers, retaliation, or failures in an academic or administrative process, you may submit your own account for private review.</p>
-      <p><strong>Before you submit:</strong> Avoid unnecessary names and do not include confidential, privileged, medical, or unrelated third-party information. Submissions are not published automatically, and publication would require separate consent.</p>
+      <p>
+<strong>Before you submit:</strong> Avoid unnecessary names and do not include confidential, privileged, medical, or unrelated third-party information. Submissions are not published automatically, and publication would require separate consent.</p>
       <p>This form is not an emergency service, legal advice, or a promise of representation or investigation.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDzyLdeGjgljh1clCviEmmgPp4D84f5HNODK2_pCUD9fIaeg/viewform" target="_blank" rel="noopener noreferrer">Open the private submission form →</a>
     </section>
@@ -37,68 +40,787 @@
     <section class="archive-filter-panel" aria-labelledby="filter-title">
       <div>
         <div class="eyebrow">Evidence index</div>
-        <h2 id="filter-title">Filter the working public record.</h2>
+        <h2 id="filter-title">Filter records</h2>
       </div>
       <div class="archive-filters">
-        <label>Year<select data-filter="year"><option value="">All years</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option></select></label>
-        <label>Evidence type<select data-filter="type"><option value="">All types</option><option value="media">Media / photograph</option><option value="correspondence">Correspondence</option><option value="recording">Meeting / recording</option><option value="academic">Academic record</option><option value="decision">Decision</option><option value="filing">Complaint / filing</option></select></label>
-        <label>Institution or process<select data-filter="process"><option value="">All institutions / processes</option><option value="community">Community / media</option><option value="western">Western University</option><option value="whro">Western Human Rights Office</option><option value="hrto">HRTO</option><option value="ombudsman">Ontario Ombudsman</option><option value="court">Court process</option></select></label>
-        <label>Issue<select data-filter="issue"><option value="">All issues</option><option value="prelaw">Before Western</option><option value="leadership">Student leadership</option><option value="race">Race / discrimination</option><option value="accommodation">Accommodation / access</option><option value="academic-status">Academic status</option><option value="professional">Professional consequences</option></select></label>
-        <label>Publication status<select data-filter="status"><option value="">All statuses</option><option value="public">Public summary / source</option><option value="pending">Publication pending</option><option value="withheld">Withheld / controlled review</option></select></label>
+        <label>Year<select data-filter="year">
+<option value="">All years</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+</select>
+</label>
+        <label>Evidence type<select data-filter="type">
+<option value="">All types</option>
+<option value="media">Media / photograph</option>
+<option value="correspondence">Correspondence</option>
+<option value="recording">Meeting / recording</option>
+<option value="academic">Academic record</option>
+<option value="decision">Decision</option>
+<option value="filing">Complaint / filing</option>
+</select>
+</label>
+        <label>Institution or process<select data-filter="process">
+<option value="">All institutions / processes</option>
+<option value="community">Community / media</option>
+<option value="western">Western University</option>
+<option value="whro">Western Human Rights Office</option>
+<option value="hrto">HRTO</option>
+<option value="ombudsman">Ontario Ombudsman</option>
+<option value="court">Court process</option>
+</select>
+</label>
+        <label>Issue<select data-filter="issue">
+<option value="">All issues</option>
+<option value="prelaw">Before Western</option>
+<option value="leadership">Student leadership</option>
+<option value="race">Race / discrimination</option>
+<option value="accommodation">Accommodation / access</option>
+<option value="academic-status">Academic status</option>
+<option value="professional">Professional consequences</option>
+</select>
+</label>
+        <label>Publication status<select data-filter="status">
+<option value="">All statuses</option>
+<option value="public">Public summary / source</option>
+<option value="pending">Publication pending</option>
+<option value="withheld">Withheld / controlled review</option>
+</select>
+</label>
       </div>
-      <div class="filter-status" aria-live="polite"><span data-result-count>31</span> indexed records shown <button type="button" data-clear-filters>Clear filters</button></div>
+      <div class="filter-status" aria-live="polite">
+<span data-result-count>31</span> indexed records shown <button type="button" data-clear-filters>Clear filters</button>
+</div>
     </section>
 
     <div class="evidence-index" data-evidence-index>
-      <article class="evidence-record" id="record-project" data-year="2020" data-type="media" data-process="community" data-issue="prelaw" data-status="withheld"><div class="record-date">2020–early 2021</div><div><span class="tag">Media / project record</span><h3>Pre-law art practice and Project Aaron</h3><p>Community and memorial-portrait work preceded the start of legal studies. An exact 2020 founding date is not established by the tribunal volumes.</p><dl><div><dt>Source</dt><dd>Project archive; March 31, 2021 published profile</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2020.html#entry-3">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-star" data-year="2021" data-type="media" data-process="community" data-issue="prelaw" data-status="public"><div class="record-date">March 31, 2021</div><div><span class="tag">Media / project record</span><h3>Published profile of Project Aaron</h3><p>Contemporaneous independent reporting documents the project before law school.</p><dl><div><dt>Source</dt><dd>Toronto Star, March 31, 2021</dd></div><div><dt>Publication status</dt><dd>Public summary / selected source</dd></div></dl><a href="year-2021.html#entry-2">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-admission" data-year="2021" data-type="academic" data-process="western" data-issue="prelaw" data-status="public"><div class="record-date">April 16, 2021</div><div><span class="tag">Academic / institutional record</span><h3>Western Law admission offer</h3><p>Official admission offer for the September 2021 JD class; admission is distinct from later academic-status decisions.</p><dl><div><dt>Source</dt><dd>April 16, 2021 admission letter; admission archive</dd></div><div><dt>Publication status</dt><dd>Public summary / selected source</dd></div></dl><a href="year-2021.html#entry-5">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-jd" data-year="2021" data-type="academic" data-process="western" data-issue="leadership" data-status="pending"><div class="record-date">September 2021</div><div><span class="tag">Academic / institutional record</span><h3>First-semester enrolment and involvement</h3><p>Admission, induction and contemporaneous student materials document entry into the program.</p><dl><div><dt>Source</dt><dd>Western Law admission and first-year student records</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2021.html">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-grade" data-year="2022" data-type="academic" data-process="western" data-issue="academic-status" data-status="withheld"><div class="record-date">2022</div><div><span class="tag">Academic / institutional record</span><h3>Academic record and grade inquiry</h3><p>The academic record includes a grade inquiry. Individual marks and student identifiers are not published.</p><dl><div><dt>Source</dt><dd>Western Law academic record and grade inquiry</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2022.html#exhibit-grade">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-advocacy" data-year="2022" data-type="correspondence" data-process="western" data-issue="race leadership" data-status="pending"><div class="record-date">September 2022</div><div><span class="tag">Correspondence</span><h3>Classroom incident and student advocacy</h3><p>Dated public and institutional accounts are distinguished from students’ reported experiences.</p><dl><div><dt>Source</dt><dd>Public reports and contemporaneous student / institutional records</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2022.html#entry-3">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-arwg-2022" data-year="2022" data-type="academic" data-process="western" data-issue="race" data-status="public"><div class="record-date">October 2022</div><div><span class="tag">Academic / institutional record</span><h3>Anti-Racism Working Group Final Report</h3><p>Western Law’s October 2022 report is indexed in its original publication year. Recommendations and later institutional acceptance are not proof of implementation.</p><dl><div><dt>Source</dt><dd>Western Law Anti-Racism Working Group Final Report, October 2022</dd></div><div><dt>Publication status</dt><dd>Public summary / selected source</dd></div></dl><a href="year-2022.html#exhibit-arwg-2022">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-scholarship" data-year="2022" data-type="correspondence" data-process="community" data-issue="professional" data-status="pending"><div class="record-date">2022–23 academic year</div><div><span class="tag">Correspondence</span><h3>Diversity scholarship and mentoring record</h3><p>A selection record concerns the 2022–23 academic year; the correspondence is part of the scholarship record.</p><dl><div><dt>Source</dt><dd>Scholarship and mentoring correspondence</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2022.html#exhibit-scholarship">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-notice" data-year="2022" data-type="correspondence" data-process="western" data-issue="race accommodation" data-status="pending"><div class="record-date">2022–2023</div><div><span class="tag">Correspondence</span><h3>Early faculty communications and institutional notice</h3><p>Written correspondence spans two calendar years and is not assigned a single invented date.</p><dl><div><dt>Source</dt><dd>Faculty email correspondence</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2022.html#exhibit-notice">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-safety" data-year="2022" data-type="correspondence" data-process="western" data-issue="accommodation" data-status="withheld"><div class="record-date">2022</div><div><span class="tag">Correspondence</span><h3>Restricted contemporaneous safety correspondence</h3><p>Only the existence and source range of private communications are indexed; contents and third-party identities remain unpublished.</p><dl><div><dt>Source</dt><dd>Contemporaneous private messages (not published)</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2022.html#exhibit-messages">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-chamberlain" data-year="2023" data-type="recording" data-process="western" data-issue="accommodation academic-status" data-status="withheld"><div class="record-date">February 2023</div><div><span class="tag">Recording / transcript</span><h3>Recorded meeting with the former dean</h3><p>The transcript concerns academic difficulties, support options and timing. The recording and personal details are not publicly released.</p><dl><div><dt>Source</dt><dd>Recording and transcript of the February 2023 meeting</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2023.html#entry-1">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-trace" data-year="2023" data-type="correspondence" data-process="community" data-issue="professional" data-status="pending"><div class="record-date">February 18, 2023 (event date)</div><div><span class="tag">Correspondence</span><h3>Documentary honouree invitation</h3><p>The invitation concerns the February 18, 2023 event.</p><dl><div><dt>Source</dt><dd>Invitation to the February 2023 TRACE event</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2023.html#exhibit-trace">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-moot" data-year="2023" data-type="correspondence" data-process="western" data-issue="accommodation" data-status="withheld"><div class="record-date">February–March 2023</div><div><span class="tag">Correspondence</span><h3>Walsh Moot correspondence</h3><p>Academic participation and administrative responses are indexed without reproducing medical disclosures.</p><dl><div><dt>Source</dt><dd>Walsh Moot correspondence</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2023.html#exhibit-moot">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-cherniak" data-year="2023" data-type="correspondence" data-process="western" data-issue="leadership" data-status="pending"><div class="record-date">2023</div><div><span class="tag">Correspondence</span><h3>Advocacy competition finals invitation</h3><p>An invitation is preserved in the advocacy record.</p><dl><div><dt>Source</dt><dd>Advocacy competition invitation</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2023.html#exhibit-cherniak">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-langille" data-year="2023" data-type="correspondence" data-process="western" data-issue="accommodation academic-status" data-status="pending"><div class="record-date">December 7, 2023</div><div><span class="tag">Correspondence</span><h3>Email to a faculty member</h3><p>A dated contemporaneous email describes concerns and requests. The original includes personal details requiring redaction.</p><dl><div><dt>Source</dt><dd>Email dated December 7, 2023</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2023.html#exhibit-langille">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-botterell" data-year="2024" data-type="recording" data-process="western" data-issue="academic-status accommodation" data-status="withheld"><div class="record-date">August 16, 2024</div><div><span class="tag">Recording / transcript</span><h3>Recorded meeting on academic status</h3><p>A recorded meeting addressed academic options, conditions and communications; private transcript and audio are not released.</p><dl><div><dt>Source</dt><dd>Recording and transcript of the August 16, 2024 meeting</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2024.html#entry-2">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-appeal" data-year="2024" data-type="filing" data-process="western" data-issue="academic-status accommodation" data-status="pending"><div class="record-date">August 20, 2024</div><div><span class="tag">Filing / process</span><h3>Academic appeal submission</h3><p>The appeal records the relief requested and evidence submitted; it is not a determination of the disputed facts.</p><dl><div><dt>Source</dt><dd>August 2024 academic appeal and supporting documents</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2024.html#entry-3">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-2024-decision" data-year="2024" data-type="decision" data-process="western" data-issue="academic-status" data-status="pending"><div class="record-date">August 21, 2024</div><div><span class="tag">Institutional decision</span><h3>University petition decision</h3><p>The written institutional outcome is distinguished from objections to its fairness.</p><dl><div><dt>Source</dt><dd>University written decision dated August 21, 2024</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2024.html#entry-4">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-whro" data-year="2024" data-type="recording" data-process="whro" data-issue="race accommodation academic-status" data-status="public"><div class="record-date">Fall 2024; exact date to verify</div><div><span class="tag">Recording / transcript</span><h3>Western Human Rights Office meeting</h3><p>Edited normal-speed and accelerated recordings are available. Statements made during the meeting are not adjudicated findings.</p><dl><div><dt>Source</dt><dd>Western Human Rights Office meeting recording and transcript</dd></div><div><dt>Publication status</dt><dd>Public summary / selected source</dd></div></dl><a href="whro-meeting.html">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-2024-status" data-year="2024" data-type="correspondence" data-process="western" data-issue="academic-status professional" data-status="pending"><div class="record-date">November 25, 2024</div><div><span class="tag">Correspondence</span><h3>Academic-status correspondence</h3><p>Dated correspondence addressed the academic position and associated professional concerns.</p><dl><div><dt>Source</dt><dd>University email correspondence dated November 25, 2024</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2024.html#exhibit-status">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-peers" data-year="2025" data-type="correspondence" data-process="western" data-issue="race academic-status" data-status="withheld"><div class="record-date">February 2025</div><div><span class="tag">Correspondence</span><h3>Faculty and classmate communications</h3><p>Private messages are source-indexed without names, screenshots or third-party identifying details.</p><dl><div><dt>Source</dt><dd>Faculty and student messages (not published)</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2025.html#exhibit-peers">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-withdrawal" data-year="2025" data-type="decision" data-process="western" data-issue="academic-status" data-status="pending"><div class="record-date">March 7, 2025</div><div><span class="tag">Institutional decision</span><h3>Withdrawal-status correspondence</h3><p>The dated university letter is indexed separately from later petitions and decisions.</p><dl><div><dt>Source</dt><dd>University letter dated March 7, 2025</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2025.html#entry-1">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-whro-response" data-year="2025" data-type="correspondence" data-process="whro" data-issue="race accommodation" data-status="pending"><div class="record-date">March 31, 2025</div><div><span class="tag">Correspondence</span><h3>Human-rights complaint correspondence</h3><p>The correspondence concerns the handling and timing of an internal complaint; it does not establish the allegations.</p><dl><div><dt>Source</dt><dd>Human Rights Office correspondence dated March 31, 2025</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2025.html#entry-2">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-alternatives" data-year="2025" data-type="correspondence" data-process="western" data-issue="academic-status" data-status="pending"><div class="record-date">March–April 2025</div><div><span class="tag">Correspondence</span><h3>Alternate academic-resolution correspondence</h3><p>Written exchanges concern possible completion routes. A proposal is not approval.</p><dl><div><dt>Source</dt><dd>University correspondence about degree-completion proposals</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2025.html#exhibit-alternatives">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-april-meeting" data-year="2025" data-type="recording" data-process="western" data-issue="academic-status" data-status="withheld"><div class="record-date">April 2025</div><div><span class="tag">Recording / transcript</span><h3>Recorded academic-completion discussion</h3><p>The official discussion is indexed separately from a private debrief, which is not published.</p><dl><div><dt>Source</dt><dd>Recording and transcript of the April 2025 university meeting</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2025.html#exhibit-meeting">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-may-decision" data-year="2025" data-type="decision" data-process="western" data-issue="academic-status professional" data-status="public"><div class="record-date">May 2, 2025</div><div><span class="tag">Institutional decision</span><h3>Continuing-enrolment petition decision</h3><p>A dated decision addressed academic status. The decision and the applicant’s objections are different records.</p><dl><div><dt>Source</dt><dd>University decision dated May 2, 2025</dd></div><div><dt>Publication status</dt><dd>Public summary / selected source</dd></div></dl><a href="year-2025.html#entry-3">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-ombudsman" data-year="2025" data-type="filing" data-process="ombudsman" data-issue="academic-status accommodation" data-status="pending"><div class="record-date">June 10, 2025</div><div><span class="tag">Filing / process</span><h3>Ontario Ombudsman submission and meeting</h3><p>The submission and meeting document a request for external oversight; they are not findings on the merits.</p><dl><div><dt>Source</dt><dd>Ontario Ombudsman submission and meeting, June 10, 2025</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2025.html#entry-4">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-oversight" data-year="2025" data-type="correspondence" data-process="ombudsman" data-issue="academic-status" data-status="pending"><div class="record-date">2024–2025; individual dates vary</div><div><span class="tag">Correspondence</span><h3>Oversight and Ombudsperson correspondence</h3><p>The correspondence documents requests for institutional and external review.</p><dl><div><dt>Source</dt><dd>Ombudsman and university Ombudsperson correspondence</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2025.html#exhibit-oversight">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-lop" data-year="2026" data-type="correspondence" data-process="western" data-issue="academic-status professional" data-status="withheld"><div class="record-date">July 11–14, 2025; July 6, 2026</div><div><span class="tag">Western correspondence</span><h3>Dean’s three completion routes and the LOP good-standing barrier</h3><p>Dean Khimji’s July 11 follow-up addressed degree conferral, an SRBA appeal and a Letter of Permission. Shane’s July 14 response identified remaining credits but made the LOP conditional on permission to return. His July 6, 2026 response confirmed that good-standing authorization was unavailable in the then-current status.</p><dl><div><dt>Source</dt><dd>Dated emails from Dean Mohamed Khimji and academic advisor Shane Chelladurai</dd></div><div><dt>Publication status</dt><dd>Redacted documentary summary; private email originals not published</dd></div></dl><a href="year-2025.html#dean-khimji-july-2025">Read the chronology →</a></div></article>
-      <article class="evidence-record" id="record-applications" data-year="2026" data-type="correspondence" data-process="community" data-issue="academic-status professional" data-status="withheld"><div class="record-date">February–July 2026</div><div><span class="tag">Admissions decisions</span><h3>What happened to the receiving-school applications</h3><p>Osgoode identified missing requirements and closed the application July 6. Queen’s did not accept late applications after its May 1 deadline. U of T identified outstanding materials June 11 and declined LOP admission July 29 without an individualized reason.</p><dl><div><dt>Source</dt><dd>Dated Osgoode, Queen’s and University of Toronto admissions correspondence</dd></div><div><dt>Publication status</dt><dd>Redacted documentary summary; application identifiers and private documents excluded</dd></div></dl><a href="year-2026.html#osgoode-feb-2026">Read the chronological outcomes →</a></div></article>
-      <article class="evidence-record" id="record-mediation" data-year="2026" data-type="filing" data-process="hrto" data-issue="academic-status" data-status="withheld"><div class="record-date">March 2026</div><div><span class="tag">Filing / process</span><h3>HRTO mediation</h3><p>Mediation is noted as a procedural event. Negotiation contents and settlement communications are not published.</p><dl><div><dt>Source</dt><dd>HRTO procedural history; confidential details withheld</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2026.html#entry-1">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-interim" data-year="2026" data-type="filing" data-process="hrto" data-issue="academic-status professional" data-status="pending"><div class="record-date">July 12, 2026</div><div><span class="tag">Filing / process</span><h3>Interim-relief application</h3><p>The filing records relief requested, not a finding that the alleged harms were established.</p><dl><div><dt>Source</dt><dd>July 12, 2026 application and procedural record</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2026.html#entry-2">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-articling" data-year="2026" data-type="correspondence" data-process="western" data-issue="professional" data-status="withheld"><div class="record-date">2026</div><div><span class="tag">Correspondence</span><h3>Articling deferral and professional mitigation</h3><p>Employment-related records document efforts to preserve a professional placement; personal contact details are withheld.</p><dl><div><dt>Source</dt><dd>Articling deferral and professional correspondence</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2026.html#exhibit-articling">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-court" data-year="2026" data-type="filing" data-process="court" data-issue="academic-status" data-status="public"><div class="record-date">August 21, 2026</div><div><span class="tag">Filing / process</span><h3>Divisional Court filing and registry directions</h3><p>The initial application and subsequent direction to use a leave-to-appeal procedure are distinct; no merits determination is implied.</p><dl><div><dt>Source</dt><dd>August 2026 court filing and registry correspondence</dd></div><div><dt>Publication status</dt><dd>Public summary / selected source</dd></div></dl><a href="year-2026.html#entry-3">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-status-2026" data-year="2026" data-type="correspondence" data-process="western" data-issue="academic-status" data-status="pending"><div class="record-date">August–September 2026</div><div><span class="tag">Correspondence</span><h3>Enrolment-status communications</h3><p>Dated status messages and account records require reconciliation; a status signal alone does not establish a final authorization.</p><dl><div><dt>Source</dt><dd>University correspondence and account-status records</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2026.html#entry-6">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-reply" data-year="2026" data-type="filing" data-process="hrto" data-issue="academic-status" data-status="pending"><div class="record-date">September 30, 2026</div><div><span class="tag">Filing / process</span><h3>HRTO applicant reply</h3><p>The reply sets out the applicant’s position; it is not a tribunal finding.</p><dl><div><dt>Source</dt><dd>September 30, 2026 applicant reply</dd></div><div><dt>Publication status</dt><dd>Source indexed; redacted exhibit not published</dd></div></dl><a href="year-2026.html#exhibit-reply">View chronology and source context →</a></div></article>
-      <article class="evidence-record" id="record-references" data-year="2026" data-type="correspondence" data-process="community" data-issue="professional" data-status="withheld"><div class="record-date">2026</div><div><span class="tag">Correspondence</span><h3>Professional reference letters</h3><p>Reference records are indexed without releasing third-party names, signatures or contact details.</p><dl><div><dt>Source</dt><dd>Professional reference letters (not published)</dd></div><div><dt>Publication status</dt><dd>Private source withheld</dd></div></dl><a href="year-2026.html#exhibit-references">View chronology and source context →</a></div></article>
+      <article class="evidence-record" id="record-project" data-year="2020" data-type="media" data-process="community" data-issue="prelaw" data-status="withheld">
+<div class="record-date">2020–early 2021</div>
+<div>
+<span class="tag">Media / project record</span>
+<h3>Pre-law art practice and Project Aaron</h3>
+<p>Community and memorial-portrait work preceded the start of legal studies. An exact 2020 founding date is not established by the tribunal volumes.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Project archive; March 31, 2021 published profile</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2020.html#entry-3">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-star" data-year="2021" data-type="media" data-process="community" data-issue="prelaw" data-status="public">
+<div class="record-date">March 31, 2021</div>
+<div>
+<span class="tag">Media / project record</span>
+<h3>Published profile of Project Aaron</h3>
+<p>Contemporaneous independent reporting documents the project before law school.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Toronto Star, March 31, 2021</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Public summary / selected source</dd>
+</div>
+</dl>
+<a href="year-2021.html#entry-2">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-admission" data-year="2021" data-type="academic" data-process="western" data-issue="prelaw" data-status="public">
+<div class="record-date">April 16, 2021</div>
+<div>
+<span class="tag">Academic / institutional record</span>
+<h3>Western Law admission offer</h3>
+<p>Official admission offer for the September 2021 JD class; admission is distinct from later academic-status decisions.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>April 16, 2021 admission letter; admission archive</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Public summary / selected source</dd>
+</div>
+</dl>
+<a href="year-2021.html#entry-5">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-jd" data-year="2021" data-type="academic" data-process="western" data-issue="leadership" data-status="pending">
+<div class="record-date">September 2021</div>
+<div>
+<span class="tag">Academic / institutional record</span>
+<h3>First-semester enrolment and involvement</h3>
+<p>Admission, induction and contemporaneous student materials document entry into the program.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Western Law admission and first-year student records</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2021.html">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-grade" data-year="2022" data-type="academic" data-process="western" data-issue="academic-status" data-status="withheld">
+<div class="record-date">2022</div>
+<div>
+<span class="tag">Academic / institutional record</span>
+<h3>Academic record and grade inquiry</h3>
+<p>The academic record includes a grade inquiry. Individual marks and student identifiers are not published.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Western Law academic record and grade inquiry</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2022.html#exhibit-grade">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-advocacy" data-year="2022" data-type="correspondence" data-process="western" data-issue="race leadership" data-status="pending">
+<div class="record-date">September 2022</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Classroom incident and student advocacy</h3>
+<p>Dated public and institutional accounts are distinguished from students’ reported experiences.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Public reports and contemporaneous student / institutional records</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2022.html#entry-3">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-arwg-2022" data-year="2022" data-type="academic" data-process="western" data-issue="race" data-status="public">
+<div class="record-date">October 2022</div>
+<div>
+<span class="tag">Academic / institutional record</span>
+<h3>Anti-Racism Working Group Final Report</h3>
+<p>Western Law’s October 2022 report is indexed in its original publication year. Recommendations and later institutional acceptance are not proof of implementation.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Western Law Anti-Racism Working Group Final Report, October 2022</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Full public report available</dd>
+</div>
+</dl>
+<a href="exhibit-arwg-2022.html">Read the full report →</a> · <a href="year-2022.html#exhibit-arwg-2022">2022 chronology →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-scholarship" data-year="2022" data-type="correspondence" data-process="community" data-issue="professional" data-status="pending">
+<div class="record-date">2022–23 academic year</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Diversity scholarship and mentoring record</h3>
+<p>A selection record concerns the 2022–23 academic year; the correspondence is part of the scholarship record.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Scholarship and mentoring correspondence</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2022.html#exhibit-scholarship">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-notice" data-year="2022" data-type="correspondence" data-process="western" data-issue="race accommodation" data-status="pending">
+<div class="record-date">2022–2023</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Early faculty communications and institutional notice</h3>
+<p>Written correspondence spans two calendar years and is not assigned a single invented date.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Faculty email correspondence</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2022.html#exhibit-notice">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-safety" data-year="2022" data-type="correspondence" data-process="western" data-issue="accommodation" data-status="withheld">
+<div class="record-date">2022</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Restricted contemporaneous safety correspondence</h3>
+<p>Only the existence and source range of private communications are indexed; contents and third-party identities remain unpublished.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Contemporaneous private messages (not published)</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2022.html#exhibit-messages">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-chamberlain" data-year="2023" data-type="recording" data-process="western" data-issue="accommodation academic-status" data-status="withheld">
+<div class="record-date">February 2023</div>
+<div>
+<span class="tag">Recording / transcript</span>
+<h3>Recorded meeting with the former dean</h3>
+<p>The transcript concerns academic difficulties, support options and timing. The recording and personal details are not publicly released.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Recording and transcript of the February 2023 meeting</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2023.html#entry-1">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-trace" data-year="2023" data-type="correspondence" data-process="community" data-issue="professional" data-status="pending">
+<div class="record-date">February 18, 2023 (event date)</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Documentary honouree invitation</h3>
+<p>The invitation concerns the February 18, 2023 event.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Invitation to the February 2023 TRACE event</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2023.html#exhibit-trace">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-moot" data-year="2023" data-type="correspondence" data-process="western" data-issue="accommodation" data-status="withheld">
+<div class="record-date">February–March 2023</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Moot participation and substitution requests</h3>
+<p>Academic participation and administrative responses are indexed without reproducing medical disclosures.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>February–March 2023 correspondence</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2023.html#exhibit-moot">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-cherniak" data-year="2023" data-type="correspondence" data-process="western" data-issue="leadership" data-status="pending">
+<div class="record-date">2023</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Advocacy competition finals invitation</h3>
+<p>An invitation is preserved in the advocacy record.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Advocacy competition invitation</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2023.html#exhibit-cherniak">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-langille" data-year="2023" data-type="correspondence" data-process="western" data-issue="accommodation academic-status" data-status="pending">
+<div class="record-date">December 7, 2023</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Email to a faculty member</h3>
+<p>A dated contemporaneous email describes concerns and requests. The original includes personal details requiring redaction.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Email dated December 7, 2023</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2023.html#exhibit-langille">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-botterell" data-year="2024" data-type="recording" data-process="western" data-issue="academic-status accommodation" data-status="withheld">
+<div class="record-date">August 16, 2024</div>
+<div>
+<span class="tag">Recording / transcript</span>
+<h3>Recorded meeting on academic status</h3>
+<p>A recorded meeting addressed academic options, conditions and communications; private transcript and audio are not released.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Recording and transcript of the August 16, 2024 meeting</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2024.html#entry-2">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-appeal" data-year="2024" data-type="filing" data-process="western" data-issue="academic-status accommodation" data-status="pending">
+<div class="record-date">August 20, 2024</div>
+<div>
+<span class="tag">Filing / process</span>
+<h3>Academic appeal submission</h3>
+<p>The appeal records the relief requested and evidence submitted; it is not a determination of the disputed facts.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>August 2024 academic appeal and supporting documents</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2024.html#entry-3">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-2024-decision" data-year="2024" data-type="decision" data-process="western" data-issue="academic-status" data-status="pending">
+<div class="record-date">August 21, 2024</div>
+<div>
+<span class="tag">Institutional decision</span>
+<h3>University petition decision</h3>
+<p>The written institutional outcome is distinguished from objections to its fairness.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>University written decision dated August 21, 2024</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2024.html#entry-4">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-whro" data-year="2024" data-type="recording" data-process="whro" data-issue="race accommodation academic-status" data-status="public">
+<div class="record-date">Fall 2024; exact date to verify</div>
+<div>
+<span class="tag">Recording / transcript</span>
+<h3>Western Human Rights Office meeting</h3>
+<p>Edited normal-speed and accelerated recordings are available. Statements made during the meeting are not adjudicated findings.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Western Human Rights Office meeting recording and transcript</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Public summary / selected source</dd>
+</div>
+</dl>
+<a href="whro-meeting.html">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-2024-status" data-year="2024" data-type="correspondence" data-process="western" data-issue="academic-status professional" data-status="pending">
+<div class="record-date">November 25, 2024</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Academic-status correspondence</h3>
+<p>Dated correspondence addressed the academic position and associated professional concerns.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>University email correspondence dated November 25, 2024</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2024.html#exhibit-status">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-peers" data-year="2025" data-type="correspondence" data-process="western" data-issue="race academic-status" data-status="withheld">
+<div class="record-date">February 2025</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Faculty and classmate communications</h3>
+<p>Private messages are source-indexed without names, screenshots or third-party identifying details.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Faculty and student messages (not published)</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2025.html#exhibit-peers">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-withdrawal" data-year="2025" data-type="decision" data-process="western" data-issue="academic-status" data-status="pending">
+<div class="record-date">March 7, 2025</div>
+<div>
+<span class="tag">Institutional decision</span>
+<h3>Withdrawal-status correspondence</h3>
+<p>The dated university letter is indexed separately from later petitions and decisions.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>University letter dated March 7, 2025</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2025.html#entry-1">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-whro-response" data-year="2025" data-type="correspondence" data-process="whro" data-issue="race accommodation" data-status="pending">
+<div class="record-date">March 31, 2025</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Human-rights complaint correspondence</h3>
+<p>The correspondence concerns the handling and timing of an internal complaint; it does not establish the allegations.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Human Rights Office correspondence dated March 31, 2025</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2025.html#entry-2">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-alternatives" data-year="2025" data-type="correspondence" data-process="western" data-issue="academic-status" data-status="pending">
+<div class="record-date">March–April 2025</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Alternate academic-resolution correspondence</h3>
+<p>Written exchanges concern possible completion routes. A proposal is not approval.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>University correspondence about degree-completion proposals</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2025.html#exhibit-alternatives">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-april-meeting" data-year="2025" data-type="recording" data-process="western" data-issue="academic-status" data-status="withheld">
+<div class="record-date">April 2025</div>
+<div>
+<span class="tag">Recording / transcript</span>
+<h3>Recorded academic-completion discussion</h3>
+<p>The official discussion is indexed separately from a private debrief, which is not published.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Recording and transcript of the April 2025 university meeting</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2025.html#exhibit-meeting">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-may-decision" data-year="2025" data-type="decision" data-process="western" data-issue="academic-status professional" data-status="public">
+<div class="record-date">May 2, 2025</div>
+<div>
+<span class="tag">Institutional decision</span>
+<h3>Continuing-enrolment petition decision</h3>
+<p>A dated decision addressed academic status. The decision and the applicant’s objections are different records.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>University decision dated May 2, 2025</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Public summary / selected source</dd>
+</div>
+</dl>
+<a href="year-2025.html#entry-3">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-ombudsman" data-year="2025" data-type="filing" data-process="ombudsman" data-issue="academic-status accommodation" data-status="pending">
+<div class="record-date">June 10, 2025</div>
+<div>
+<span class="tag">Filing / process</span>
+<h3>Ontario Ombudsman submission and meeting</h3>
+<p>The submission and meeting document a request for external oversight; they are not findings on the merits.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Ontario Ombudsman submission and meeting, June 10, 2025</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2025.html#entry-4">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-oversight" data-year="2025" data-type="correspondence" data-process="ombudsman" data-issue="academic-status" data-status="pending">
+<div class="record-date">2024–2025; individual dates vary</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Oversight and Ombudsperson correspondence</h3>
+<p>The correspondence documents requests for institutional and external review.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Ombudsman and university Ombudsperson correspondence</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2025.html#exhibit-oversight">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-lop" data-year="2026" data-type="correspondence" data-process="western" data-issue="academic-status professional" data-status="withheld">
+<div class="record-date">July 11–14, 2025; July 6, 2026</div>
+<div>
+<span class="tag">Western correspondence</span>
+<h3>Dean’s three completion routes and the LOP good-standing barrier</h3>
+<p>The July 11 follow-up answered completion questions raised before the May 2 withdrawal decision: degree conferral so Renee could proceed to articling, return through an SRBA appeal, and completion elsewhere through a Letter of Permission. The earlier requests also sought a neutral decision-maker and safe academic conditions in response to reported grading-manipulation and academic-integrity concerns. The July 14 response identified remaining credits but made the LOP conditional on permission to return. The July 6, 2026 response confirmed that good-standing authorization was unavailable in the then-current status.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>March–April 2025 requests, May 2 withdrawal decision, and dated July 2025 and July 2026 correspondence</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Redacted documentary summary; private email originals not published</dd>
+</div>
+</dl>
+<a href="year-2025.html#dean-khimji-july-2025">Read the chronology →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-applications" data-year="2026" data-type="correspondence" data-process="community" data-issue="academic-status professional" data-status="withheld">
+<div class="record-date">February–July 2026</div>
+<div>
+<span class="tag">Admissions decisions</span>
+<h3>What happened to the receiving-school applications</h3>
+<p>Osgoode identified missing requirements and closed the application July 6. Queen’s did not accept late applications after its May 1 deadline. U of T identified outstanding materials June 11 and declined LOP admission July 29 without an individualized reason.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Dated Osgoode, Queen’s and University of Toronto admissions correspondence</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Redacted documentary summary; application identifiers and private documents excluded</dd>
+</div>
+</dl>
+<a href="year-2026.html#osgoode-feb-2026">Read the chronological outcomes →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-mediation" data-year="2026" data-type="filing" data-process="hrto" data-issue="academic-status" data-status="withheld">
+<div class="record-date">March 2026</div>
+<div>
+<span class="tag">Filing / process</span>
+<h3>HRTO mediation</h3>
+<p>Mediation is noted as a procedural event. Negotiation contents and settlement communications are not published.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>HRTO procedural history; confidential details withheld</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2026.html#entry-1">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-interim" data-year="2026" data-type="filing" data-process="hrto" data-issue="academic-status professional" data-status="pending">
+<div class="record-date">July 12, 2026</div>
+<div>
+<span class="tag">Filing / process</span>
+<h3>Interim-relief application</h3>
+<p>The filing records relief requested, not a finding that the alleged harms were established.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>July 12, 2026 application and procedural record</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2026.html#entry-2">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-articling" data-year="2026" data-type="correspondence" data-process="western" data-issue="professional" data-status="withheld">
+<div class="record-date">2026</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Articling deferral and professional mitigation</h3>
+<p>Employment-related records document efforts to preserve a professional placement; personal contact details are withheld.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Articling deferral and professional correspondence</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2026.html#exhibit-articling">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-court" data-year="2026" data-type="filing" data-process="court" data-issue="academic-status" data-status="public">
+<div class="record-date">August 21, 2026</div>
+<div>
+<span class="tag">Filing / process</span>
+<h3>Divisional Court filing and registry directions</h3>
+<p>The initial application and subsequent direction to use a leave-to-appeal procedure are distinct; no merits determination is implied.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>August 2026 court filing and registry correspondence</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Public summary / selected source</dd>
+</div>
+</dl>
+<a href="year-2026.html#entry-3">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-status-2026" data-year="2026" data-type="correspondence" data-process="western" data-issue="academic-status" data-status="pending">
+<div class="record-date">August–September 2026</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Enrolment-status communications</h3>
+<p>Dated status messages and account records require reconciliation; a status signal alone does not establish a final authorization.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>University correspondence and account-status records</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2026.html#entry-6">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-reply" data-year="2026" data-type="filing" data-process="hrto" data-issue="academic-status" data-status="pending">
+<div class="record-date">September 30, 2026</div>
+<div>
+<span class="tag">Filing / process</span>
+<h3>HRTO applicant reply</h3>
+<p>The reply sets out the applicant’s position; it is not a tribunal finding.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>September 30, 2026 applicant reply</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Source indexed; redacted exhibit not published</dd>
+</div>
+</dl>
+<a href="year-2026.html#exhibit-reply">View chronology and source context →</a>
+</div>
+</article>
+      <article class="evidence-record" id="record-references" data-year="2026" data-type="correspondence" data-process="community" data-issue="professional" data-status="withheld">
+<div class="record-date">2026</div>
+<div>
+<span class="tag">Correspondence</span>
+<h3>Professional reference letters</h3>
+<p>Reference records are indexed without releasing third-party names, signatures or contact details.</p>
+<dl>
+<div>
+<dt>Source</dt>
+<dd>Professional reference letters (not published)</dd>
+</div>
+<div>
+<dt>Publication status</dt>
+<dd>Private source withheld</dd>
+</div>
+</dl>
+<a href="year-2026.html#exhibit-references">View chronology and source context →</a>
+</div>
+</article>
     </div>
     <p class="empty-filter-state" data-empty-state hidden>No indexed records match all selected filters.</p>
 
     <section class="archive-method">
-      <h2>How to read this index</h2><p><strong>Dating:</strong> Entries follow the date of the event or original source, not the year of later litigation. Year-only entries are used where the supporting material does not establish a specific day. Original document references are retained in the private research file.</p>
-      <p><strong>Firsthand account</strong> describes what I say I experienced. <strong>Reported account</strong> describes what another person communicated. <strong>University statement</strong> records the institution's own wording. <strong>Formal decision</strong> records an administrative outcome. <strong>Filing</strong> records what a party alleged or requested, not a finding.</p>
-      <p><a href="diary.html">Browse all seven chronological diary pages →</a></p>
+      <h2>How to read this index</h2>
+<p>
+<strong>Dating:</strong> Entries follow the date of the event or original source, not the year of later litigation. Year-only entries are used where the supporting material does not establish a specific day. Original document references are retained in the private research file.</p>
+      <p>
+<strong>Firsthand account</strong> describes what I say I experienced. <strong>Reported account</strong> describes what another person communicated. <strong>University statement</strong> records the institution's own wording. <strong>Formal decision</strong> records an administrative outcome. <strong>Filing</strong> records what a party alleged or requested, not a finding.</p>
+      <p>
+<a href="diary.html">Browse all seven chronological diary pages →</a>
+</p>
     </section>
   </div>
 </main>
-<div id="site-footer"></div>
-<script src="site.js"></script>
-<script src="evidence-index.js"></script>
+<div id="site-footer">
+</div>
+<script src="site.js">
+</script>
+<script src="evidence-index.js">
+</script>
 </body>
 </html>

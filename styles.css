@@ -203,3 +203,25 @@ body{background:#fcfcfd}
   .diary-year{grid-row:1/span 2}
   .diary-open{grid-column:2;grid-row:3}
 }
+
+/* Factual chronology presentation */
+.fact-chronology{padding:2.5rem 1.35rem 3rem;background:#fff;border-bottom:1px solid var(--line)}
+.fact-chronology h2{font:400 clamp(2rem,4vw,3rem)/1.2 var(--serif);margin:.5rem 0}
+.fact-chronology p{max-width:850px;color:#48556a}
+.fact-sequence{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin:1.25rem 0}
+.fact-sequence a{display:flex;flex-direction:column;gap:.3rem;text-decoration:none;color:var(--ink);background:#f8fafc;border:1px solid #dce3eb;border-radius:10px;padding:1rem}
+.fact-sequence a:hover{border-color:#7395bb;background:#f0f5fb}
+.fact-sequence time{font:700 .82rem var(--sans);color:#3f6288}
+.fact-sequence strong{font-size:1rem;line-height:1.35}
+.fact-sequence span{font-size:.9rem;line-height:1.55;color:#4b596a}
+.fact-actions{display:flex;gap:.65rem;flex-wrap:wrap}
+.chronology-year-nav{position:sticky;top:65px;z-index:10;padding:.5rem!important;background:#fff;border:1px solid #dce3eb;border-radius:12px}
+.timeline-heading{font:400 1.8rem var(--serif)!important;margin:1.5rem 0 1rem!important}
+.timeline{border-left:2px solid #b4c7db;padding-left:1rem;gap:.65rem}
+.timeline-item{position:relative;grid-template-columns:150px 1fr;gap:1rem;padding:1rem 1.1rem;border-radius:10px;box-shadow:none;background:#fff}
+.timeline-item:before{content:"";position:absolute;left:calc(-1rem - 6px);top:1.3rem;width:10px;height:10px;border-radius:50%;background:#52749b;border:2px solid #fff}
+.timeline-date{font:700 .9rem/1.5 var(--sans);color:#36577b}
+.timeline-item h3{font:600 1.04rem/1.4 var(--sans);margin:0 0 .3rem}
+.timeline-item p{font-size:.89rem;line-height:1.55;margin:0;color:#4b586a}
+@media(max-width:850px){.fact-sequence{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline-item{grid-template-columns:1fr;gap:.25rem}}
+@media(max-width:550px){.fact-sequence{grid-template-columns:1fr}.chronology-year-nav{top:58px;overflow-x:auto;flex-wrap:nowrap!important;white-space:nowrap}}

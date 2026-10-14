@@ -17,7 +17,7 @@
   </header>
   <div class="content-shell">
     <section class="release-feature whro-intro" aria-labelledby="why-it-matters">
-      <div class="release-top"><span class="eyebrow">Western University Human Rights Office</span><span class="tag">Publication pending</span></div>
+      <div class="release-top"><span class="eyebrow">Western University Human Rights Office</span><span class="tag" id="whro-publication-badge">Audio upload pending</span></div>
       <h2 id="why-it-matters">Why this meeting matters</h2>
       <p>The recording documents concerns raised through an internal human-rights channel, including accounts concerning racial discrimination, academic accommodations, trauma, grading, institutional treatment and professional consequences. It also records the responses, procedural explanations and anti-reprisal guidance provided during the meeting.</p>
       <p>The recording establishes what participants said during the meeting. It does not convert disputed allegations into adjudicated findings.</p>
@@ -25,27 +25,29 @@
         <div><dt>Date</dt><dd>Fall 2024 · exact date under source-metadata verification</dd></div>
         <div><dt>Participants</dt><dd>The site owner, university human-rights representatives and student participant(s); public naming remains under privacy review</dd></div>
         <div><dt>Source</dt><dd>Original meeting recording and working transcript</dd></div>
-        <div><dt>Publication status</dt><dd>Cleaned audio awaiting owner approval; transcript redaction in preparation</dd></div>
+        <div><dt>Publication status</dt><dd id="whro-publication-status">Final edited audio selected; file upload pending. Transcript redaction in preparation.</dd></div>
       </dl>
     </section>
 
     <section class="audio-release-panel" aria-labelledby="listen-title">
       <div class="eyebrow">Listening options</div>
-      <h2 id="listen-title">Approved audio will appear here.</h2>
-      <p>Two versions will be offered after final approval. They will contain the same cleaned content; only playback speed will differ. Selecting one version will stop the other automatically.</p>
-      <div class="audio-choice-grid" aria-label="Planned audio versions">
+      <h2 id="listen-title">Listen to the edited meeting</h2>
+      <p>Choose the normal-speed recording (1 hour, 3 minutes) or the 1.5× version (42 minutes). Both contain the same edited meeting. Starting one recording pauses the other.</p>
+      <div class="audio-choice-grid" aria-label="WHRO audio versions">
         <article>
-          <span class="release-index">Version A · 1.0×</span>
+          <span class="release-index">Version A · 1.0× · 1:03:00</span>
           <h3>Normal playback speed</h3>
-          <div class="audio-placeholder" role="status">Audio not yet published</div>
+          <div class="audio-placeholder" data-audio-pending="normal" role="status">Audio file awaiting upload</div>
+          <audio controls preload="none" data-whro-audio="normal" hidden aria-label="WHRO meeting normal speed"></audio>
         </article>
         <article>
-          <span class="release-index">Version B · 1.5×</span>
+          <span class="release-index">Version B · 1.5× · 42:00</span>
           <h3>Faster playback</h3>
-          <div class="audio-placeholder" role="status">Audio not yet published</div>
+          <div class="audio-placeholder" data-audio-pending="fast" role="status">Audio file awaiting upload</div>
+          <audio controls preload="none" data-whro-audio="fast" hidden aria-label="WHRO meeting accelerated version"></audio>
         </article>
       </div>
-      <p class="quiet-note"><strong>No unfinished recording is linked on this page.</strong> The controls will be activated only after both public files are approved.</p>
+      <p class="quiet-note" id="whro-audio-status" role="status">The listening players will become available when both approved files are present on the website.</p>
       <p><a href="#" aria-disabled="true" class="disabled-link">Redacted transcript · in preparation</a></p>
     </section>
 
@@ -72,12 +74,44 @@
 
     <section class="archive-method">
       <h2>Privacy and editing note</h2>
-      <p>Portions involving students, sensitive third-party experiences and information not necessary to understand the institutional process have been removed from the planned public version. The unedited source remains preserved separately. The public edit will not be described as complete or released until it has been checked against the source recording.</p>
+      <p>The published listening copies are edited versions of the meeting, with portions concerning students, sensitive third-party experiences and material not necessary to understand the institutional process removed. The original source recording is preserved separately. Both public listening copies contain the same edited content at different playback speeds.</p>
       <div class="button-row"><a class="button" href="year-2024.html#entry-6">Open the 2024 timeline entry →</a><a class="button" href="evidence.html">Browse the evidence archive →</a><a class="button" href="audio.html">See the phased audio plan →</a></div>
     </section>
   </div>
 </main>
 <div id="site-footer"></div>
 <script src="site.js"></script>
+<script>
+(() => {
+  const recordings = [
+    {key: 'normal', path: 'assets/audio/WHRO-Final-Normal-Speed-Web.mp3'},
+    {key: 'fast', path: 'assets/audio/WHRO-Final-1.5x-Web.mp3'}
+  ];
+  const players = [...document.querySelectorAll('[data-whro-audio]')];
+  players.forEach(player => player.addEventListener('play', () => {
+    players.forEach(other => { if (other !== player) other.pause(); });
+  }));
+  Promise.all(recordings.map(async item => {
+    try {
+      const response = await fetch(item.path, {method: 'HEAD', cache: 'no-store'});
+      if (!response.ok || !(response.headers.get('content-type') || '').includes('audio')) return false;
+      const player = document.querySelector('[data-whro-audio="' + item.key + '"]');
+      const placeholder = document.querySelector('[data-audio-pending="' + item.key + '"]');
+      player.src = item.path;
+      player.hidden = false;
+      if (placeholder) placeholder.hidden = true;
+      return true;
+    } catch (_) { return false; }
+  })).then(available => {
+    if (available.every(Boolean)) {
+      document.getElementById('whro-audio-status').textContent = 'Both edited audio recordings are available.';
+      document.getElementById('whro-publication-badge').textContent = 'Audio available';
+      document.getElementById('whro-publication-status').textContent = 'Two edited listening copies available; redacted transcript in preparation.';
+    } else {
+      document.getElementById('whro-audio-status').textContent = 'Audio upload in progress. Players will appear automatically when the files are available.';
+    }
+  });
+})();
+</script>
 </body>
 </html>
